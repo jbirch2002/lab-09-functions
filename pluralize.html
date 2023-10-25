@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluralize</title>
+</head>
+<body>
+
+<script>
+    function pluralize(word) 
+    {
+        if (word === "moose")
+        {
+            return "moose";
+        }
+        else if (word === "automaton")
+        {
+            return "automata";
+        }
+        else if (word === "mouse")
+        {
+            return "mice";
+        }
+        else
+        {
+            return word + "s";
+        }
+    }
+    let user_input = prompt("Word please:");
+    let plural_version = pluralize(user_input);
+
+    
+    console.log(plural_version);
+    alert(plural_version);
+</script>
+
+</body>
+</html>
