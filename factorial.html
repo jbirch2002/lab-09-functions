@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+
+<script>
+    function factorial(n)
+     {
+        let result = 1;
+        for (let i = 1; i <= n; i++)
+        {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    let user_input = prompt("Number please:");
+    let number = parseInt(user_input);
+
+    if (number < 0)
+    {
+        console.log("Invalid input. Please enter a positive integer.");
+    } 
+    
+    else
+    {
+        let result = factorial(number);
+        console.log("Factorial of " + number + " is: " + result);
+        alert("Factorial of " + number + " is: " + result);
+    }
+
+</script>
+
+</body>
+</html>
