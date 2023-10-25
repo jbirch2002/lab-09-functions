@@ -1,8 +1,5 @@
 def greet():
     print("hello")
 
-greet()
-greet()
-greet()
-greet()
-greet()
+for i in range(5):
+    greet()
